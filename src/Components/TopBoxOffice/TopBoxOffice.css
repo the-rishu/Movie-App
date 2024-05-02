@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.top-box-office-container{
+    border:solid green 2px;
+    display:grid;
+    padding: 1rem;
+    margin: 10px;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    /* justify-content: space-around; */
+}
+.top-box-office{
+    border: solid yellow 2px;
+    width: 100%;
+    height:fit-content;
+    padding: 10px;
+}
+.topboxoffice-imageContainer{
+    border: solid green 1px;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    position: relative;
+   
+}
+.top-box-image
+{
+    height: inherit;
+    width: 100%;
+}
+.topboxoffice-rating{
+    display: flex;
+    justify-content: space-between;
+}
+
+

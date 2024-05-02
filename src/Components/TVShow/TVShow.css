@@ -1,0 +1,44 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+.tvshow-container{
+    border: solid orangered 1px;
+    width: 100%;
+    
+}
+.tvshows-rowContainer{
+    border: solid yellow 1px;
+    width: 98%;
+    margin:10px auto;
+    padding: 10px;
+}
+.tvshows-listContainer{
+    border: solid black 1px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    /* justify-content: space-between; */
+}
+.list-box{
+    border: solid green 1px;
+}
+.tv-imageContainer{
+    border: solid red 1px;
+    height: 300px;
+    width: 300px;
+}
+.tv-image{
+    height: 100%;
+    width: 100%;
+}
+.tvshow-title{
+    line-break: auto;
+}
+.tvshows-date,.tvshows-listContainer,.tvshow-title{
+    margin: 5px 0px;
+}
+
+
+

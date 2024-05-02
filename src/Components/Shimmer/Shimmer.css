@@ -1,0 +1,13 @@
+.Shimmer-container
+{
+    border:solid red 2px;
+    display:grid;
+    height: 300px;
+    width: 300px;
+    padding: 1rem;
+}
+.Shimmer-box{
+    border: solid black 1px;
+    text-overflow: clip;
+    height: 100%;
+}

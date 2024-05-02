@@ -1,0 +1,48 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+.upcoming-movie-container{
+    border: solid purple 1px;
+    width: 100%;
+    
+}
+.upcoming-movie-box{
+    border: solid red 1px;
+    width: 98%;
+    margin:10px auto;
+    padding: 10px;
+}
+.upcoming-movie-title{
+    border: solid black 1px;
+    width: 100%;
+}
+.upcoming-movie-title,.upcoming-movie-collection,.upcoming-movie-list-container,.upcoming-movie-date{
+    margin: 5px 0px;
+}
+.upcoming-movie-collection
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border: solid blue 1px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+.upcoming-movie-list-container{
+    border: solid green 1px;
+}
+.upcoming-movie-image-container{
+    border: solid yellow 1px;
+    height: 300px;
+    width: 100%;
+}
+
+
+.upcoming-movie-list-image{
+    height: 100%;
+    width: 100%;
+}
+.upcoming-movie-title{
+    border: solid gold 1px;
+}

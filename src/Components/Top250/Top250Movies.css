@@ -1,0 +1,54 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.top-250-movies-container
+{
+    border:solid red 2px;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 1rem;
+    margin: 10px;
+
+}
+.top-250-movies-box{
+    border: solid black 1px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: #676869;
+}
+/* .top-250-movies-box>*{
+    width: 90%;
+    margin: auto;
+} */
+.top250movie-imageContainer{
+    border: solid red 1px;
+    max-height: 350px;
+    width: 90%;
+    box-sizing: border-box;
+    position: relative;
+    margin: 5px auto;
+}
+.top250movies-image{
+    border: solid green 1px;
+    /* object-fit:contain; */
+    height:100%;
+    margin: auto;
+    width:100%;
+    /* z-index: 1; */
+}
+.top250-title , .top250movies-title , .top250-Rating,.top250movies-watchList,.top250movies-timeline{
+    width:90%;
+    border: solid yellow 1px;
+    margin:2px auto;
+}
+.top250movies-timeline{
+    display: flex;
+}
+.top250movies-watchList{
+    display: flex;
+    justify-content: space-between;
+}
