@@ -4,11 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider } from 'react-router-dom';
-import appRouter from './App';
+import appRouter  from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(<RouterProvider router={appRouter}/>);
-root.render(<RouterProvider router={appRouter}/>);
+root.render(<RouterProvider router={appRouter}/>)
 // root.render(
 //   <React.StrictMode>
 //     <App />

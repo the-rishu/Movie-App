@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
 }
-.most-popular-movies-container{
+/* .most-popular-movies-container{
     border:solid green 2px;
     display:grid;
     padding: 1rem;
@@ -10,28 +10,39 @@
     grid-template-columns: repeat(4,1fr);
     column-gap: 10px;
     row-gap: 10px; 
-}
+} */
 .most-popular-movies{
-    border: solid yellow 2px;
+    /* border: solid yellow 2px; */
+    background-color: gray;
+    max-height:450px;
+    cursor: pointer;
+    border-radius: 12px;
+    /* padding-top: 5px; */
     width: 100%;
-    height:fit-content;
-    padding: 10px;
+}
+.most-popular-movies>*{
+    width: 90%;
+    margin:10px  auto;
+    /* border: solid red 1px; */
 }
 .mostpopularmovie-image-container{
-    border: solid green 1px;
-    height: 100%;
-    width: 100%;
-    padding: 0px;
+    /* border: solid green 1px; */
     position: relative;
+    height: 70%;
+    border-radius: 12px;
    
 }
 .mostpopularmovie-image
 {
-    height: 90%;
+    height: 100%;
     width: 100%;
+    border-radius: 12px;
 }
-.most-popular-title ,.most-popular-year{
-    border: solid green 1px;
+.most-popular-timeline
+{
+    display: flex;
+}
+.most-popular-rating{
     display:flex;
-    margin:5px 0px;
+    justify-content: space-between;
 }

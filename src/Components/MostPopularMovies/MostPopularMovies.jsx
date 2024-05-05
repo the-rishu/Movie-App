@@ -36,20 +36,19 @@ const MostPopularMovies = () => {
   
 
   return (data.length === 0)?<h1>Loading....</h1>: (
-    <div className='most-popular-movies-container'>
+    <div className='container'>
         {data.map((res)=>(
              <div className='most-popular-movies' key={datakeys[i++]}>
               <div className="mostpopularmovie-image-container">
                 <img className='mostpopularmovie-image' src={res.image} alt="" />
               </div>
-              <p>{res.title}</p>
-              <div className='most-popular-title'>
-                <p>{res.timeline}|</p>
+              <p className='most-popular-title'>{res.title}</p>
+              <div className='most-popular-timeline'>
                 <p>{res.year}</p>
               </div>
-              <div className='most-popular-year'>
-                <p>{res.rating}</p>
-                <button>Add to WatchList</button>
+              <div className='most-popular-rating'>
+                <p>Rating:{res.rating.split("(")[0]}/10</p>
+                <button className='watchList-btn'>Add to WatchList</button>
               </div>
                 
             </div>

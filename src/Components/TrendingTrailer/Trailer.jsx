@@ -11,8 +11,8 @@ const Trailer = () => {
  
  
   let data = useFetchAPi({url});
-  console.log("Trailer Called")
-  let firstCheck = true;
+  // console.log("Trailer Called")
+
 
   let movieforsearch = useSelector((appStore) =>{
     return appStore.search?.searchItem;
@@ -24,10 +24,6 @@ const Trailer = () => {
       data = data.filter((res) => {
       return res.title.toLowerCase().includes(movieforsearch.toLowerCase());
     })
-    if(firstCheck)
-    {
-      firstCheck  = false;
-    }
   }
 
   const dispatch = useDispatch();
@@ -40,14 +36,15 @@ const Trailer = () => {
     let watchColl = useSelector((appStore) =>{
       return appStore.watchList?.watchListItem;
     })
-    console.log(watchColl)
+    // console.log(watchColl)
     
   const datakeys = Object.keys(data);
   let i = 0 ;
 
 
- return (data.length ===0)?((firstCheck)? <h1>Loading....</h1>:<h1>Not found</h1> ):(
-    <div className='Trailer-container'>
+//  return (data.length ===0)?((firstCheck)? <h1>Loading....</h1>:<h1>Not found</h1> ):(
+  return (data.length ===0)?(<h1>Loading....</h1>):(
+    <div className='container'>
         {data.map((res)=>(
         <div key={datakeys[i++]} className='Trailer-box'>
             <div className='trailer-image-container'>
@@ -59,16 +56,20 @@ const Trailer = () => {
             
            
             {/* title and data */}
+            <Link to={res.videoLink} className='trailer-videolink'>
             <p className='trailer-title'>{res.title}</p>
+            </Link>
+            
             <p className='trailer-date'>{res.releaseDate}</p>
 
             {/* link and watchlist */}
-            <div className='trailer-video-info'>
-                <Link to={res.videoLink} className='videolink'>Video Link</Link>
-                <button className='watchList-btn' onClick={() =>{
-                  handleWatchList(res)
-                }}>Add To WatchList</button>
+            <div className="watchlist">
+              <button className='watchList-btn' onClick={() =>{
+                handleWatchList(res)
+              }}>Add To WatchList</button>
             </div>
+            
+           
             
             
         </div>))

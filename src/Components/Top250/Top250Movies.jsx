@@ -1,13 +1,13 @@
 import React from 'react'
 import './Top250Movies.css'
-import { TOP_250_MOVIES as url , options } from '../URL/Url';
+import { TOP_250_MOVIES as url } from '../URL/Url';
 import useFetchAPi from '../URL/useFetchAPi';
 import { useSelector,useDispatch } from 'react-redux';
 import { addItemToWatchList } from '../URL/Slices/WatchList';
 const Top250Movies = () => {
 
 
-    let data = useFetchAPi({url});
+  let data = useFetchAPi({url});
     
 
   let movieforsearch = useSelector((appStore) =>{
@@ -34,7 +34,7 @@ const Top250Movies = () => {
 
 
   return (data.length===0)?<h1>Loading...</h1> : (
-    <div className='top-250-movies-container'>
+    <div className='container'>
     {data.map((res) => (
         <div className='top-250-movies-box' key={datakeys[i++]}>
             <div className="top250movie-imageContainer">
@@ -42,14 +42,13 @@ const Top250Movies = () => {
             </div>
             <p className='top250-title'>{res.title}</p>
             <div className="top250movies-timeline">
-              <p>{res.year}|</p>
-              <p>{res.timeline}</p>
-              
+              <p>{res.year}</p>
+              {/* <p>{res.timeline}</p> */} 
             </div>
              <p className="top250-Rating">Rating : {res.rating.split("(")[0]}/10</p>
             <div className="top250movies-watchList">
               <p>{res.rating.split("(")[1].split(")")[0]}</p>
-              <button>Add to WatchList</button>
+              <button className='watchList-btn' onClick={(res) => handleWatchList(res)}>Add to WatchList</button>
             </div>   
         </div>
     ))

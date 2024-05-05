@@ -1,5 +1,5 @@
 import React from 'react'
-import { MOVIE_NEWS as url , options } from '../URL/Url';
+import { MOVIE_NEWS as url  } from '../URL/Url';
 import './MovieNews.css'
 import useFetchAPi from '../URL/useFetchAPi';
 import { useSelector } from 'react-redux';
@@ -31,7 +31,7 @@ const MovieNews = () => {
 
 
   return (data.length===0) ? <h1>Loading...</h1> : (
-    <div className='movies-news-container'>
+    <div className='container'>
         {data.map((res)=>(
           <div className='movies-news-box' key={datakeys[i++]}>
 

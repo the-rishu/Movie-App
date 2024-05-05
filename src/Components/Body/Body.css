@@ -3,10 +3,6 @@ margin: 0px;
 padding:  0px;
 box-sizing: border-box;
 }
-.Trailer-div{
-    border: solid yellow 1px;
-    width: 80%;
-}
 .apiOption{
     display: flex;
     border: solid black 2px;
@@ -18,17 +14,17 @@ box-sizing: border-box;
     text-decoration: none;
     font-weight: bold;
     padding: 8px 5px;
-    border: solid yellow 2px;
+    /* border: solid yellow 2px; */
     color: white;
     background-color: gray;
     border-radius: 12px;
 }
 .changeColor{
-    background-color: blue;
+    background-color: darkorange;
     text-decoration: none;
-    font-weight: bold;
+    /* font-weight: bold; */
     padding: 8px 5px;
-    border: solid yellow 2px;
+    /* border: solid yellow 2px; */
     color: white;
     /* background-color: gray; */
     border-radius: 12px;

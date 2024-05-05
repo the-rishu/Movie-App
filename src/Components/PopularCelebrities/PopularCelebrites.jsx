@@ -29,7 +29,7 @@ const PopularCelebrites = () => {
   
 
   return (data.length===0)?<h1>Loading..</h1> :(
-    <div className="pplrCeleb-container">
+    <div className="container">
       {
         data.map((res) =>(
           <div key={datakeys[i++]} className="pplrCeleb-box">

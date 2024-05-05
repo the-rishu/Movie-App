@@ -38,16 +38,17 @@ const TopBoxOffice = () => {
   console.log(data)
 
   return (data.length===0)?<h1>Loading...</h1>:(
-    <div className='top-box-office-container'>
+    <div className='container'>
       {data.map((res) => (
         <div className='top-box-office' key={datakeys[i++]}>
           <div className="topboxoffice-imageContainer">
             <img className='top-box-image' src={res.posterImage} alt={res.title} />
           </div>
-          <p>{res.title}</p>
-          <div className="topboxoffice-rating">
-            <p>{res.imdbRating}</p>
-            <button>Add to WatchList</button>
+          <p className='topboxoffice-title'>{res.title}</p>
+          <p className='topboxoffice-rating'>Rating : {res.imdbRating.split("(")[0]}/10</p>
+          <div className="topboxoffice-view">
+            <p>{res.imdbRating.split("(")[1].split(")")[0]}</p>
+            <button className='watchList-btn'>Add to WatchList</button>
           </div>
           
             {/* <p>{res.totalGross}</p>

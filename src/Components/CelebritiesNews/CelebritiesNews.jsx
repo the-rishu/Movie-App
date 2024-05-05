@@ -31,7 +31,7 @@ const CelebritiesNews = () => {
 
 
   return (data.length===0)?<h1>Loading...</h1>:(
-   <div className='celebrities-news-container'>
+   <div className='container'>
       {data.map((res)=>(
         <div className='celebrities-news-box' key={datakeys[i++]}>
            
@@ -41,7 +41,7 @@ const CelebritiesNews = () => {
               <img className='celebrities-news-image' src={res.image} alt="" />
             </div>
            
-              <Link className='celebrities-news-title' to={res.sourceLink}>{res.title}</Link>
+            <Link className='celebrities-news-title' to={res.sourceLink}>{res.title}</Link>
           
            <div className="celebrities-news-writer">
               <p>{res.writer}</p>
