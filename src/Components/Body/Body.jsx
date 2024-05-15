@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Body.css'
-import { Outlet} from 'react-router-dom'
+import { Outlet, useLocation} from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import WatchListColl from '../WatchList/WatchListColl'
 import Error from '../Error/Error'
@@ -16,10 +16,15 @@ import TVShow from '../TVShow/TVShow'
 
 const Body = () => {
   let [activeLink,setactiveLink] = useState(null);
+
+  const urlPath = useLocation()
+  console.log(urlPath.pathname);
+
   const handleBackgroundColor = (link) =>{
     if(activeLink!==link)
     {
       setactiveLink(link);
+      console.log(urlPath);
     }
   }
 

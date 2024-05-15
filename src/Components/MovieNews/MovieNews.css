@@ -1,3 +1,6 @@
+/* .moviesnews-container{
+    height: 600px;
+} */
 .movies-news-box{
     /* border: solid black 1px; */
     background-color: #676869;
@@ -34,4 +37,28 @@
 .movies-news-writer>p{
     margin: 2px 0px;
 }
-
+@media screen and (max-width:767px) {
+    .movies-news-box{
+        max-height:200px;
+        min-width:150px;
+        border-radius: 6px;
+        padding-top: 0px;
+        font-size: 10px;
+    }
+    .movies-news-box>*{
+        width: 90%;
+        margin: 2px auto;
+    }
+    .movies-news-image-container{
+        width: 100%;
+        border-radius: 6px;
+    }
+    .movies-news-image{
+        border-radius: 6px;
+    }
+    
+    .movies-news-title
+    {
+        font-weight: normal;
+    }
+}

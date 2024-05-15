@@ -7,7 +7,6 @@
     /* border: solid purple 2px; */
     display: flex;
     justify-content: space-between;
-    /* height: auto; */
 }
 /* .image-box{
     /* border: solid yellow 1px; 
@@ -29,7 +28,7 @@
     border: solid red 2px;
     width: 50%;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 .search-bar{
     /* height: 80%; */
@@ -51,6 +50,16 @@
 .navbar>ul>li{
     border: solid yellow 2px;
     text-align: center;
+}
+
+.category{
+    cursor: pointer;
+}
+.dis-category{
+    display: block;
+}
+.hide{
+    display: none;
 }
 
 

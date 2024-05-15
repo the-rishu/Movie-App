@@ -31,7 +31,7 @@ const MovieNews = () => {
 
 
   return (data.length===0) ? <h1>Loading...</h1> : (
-    <div className='container'>
+    <div className='container moviesnews-container'>
         {data.map((res)=>(
           <div className='movies-news-box' key={datakeys[i++]}>
 

@@ -10,8 +10,6 @@
     border-radius: 12px;
     padding-top: 10px;
     width: 100%;
-    font-size: 14px;
-    
 }
 .top-250-movies-box>*{
     width: 90%;
@@ -33,4 +31,23 @@
 .top250movies-watchList{
     display: flex;
     justify-content: space-between;
+}
+@media screen and (max-width:767px) {
+    .top-250-movies-box{
+        max-height:200px;
+        min-width:150px;
+        border-radius: 6px;
+        
+    }
+    .top-250-movies-box>*{
+        width: 90%;
+        margin: 5px auto;
+    }
+    .top250movie-imageContainer{
+        width: 100%;
+        border-radius: 6px;
+    }
+    .top250movies-image{
+        border-radius: 6px;
+    }
 }

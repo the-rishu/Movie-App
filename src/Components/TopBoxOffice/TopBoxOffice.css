@@ -4,7 +4,7 @@
 
 }
 .top-box-office{
-    border: solid yellow 2px;
+    /* border: solid yellow 2px; */
     background-color: gray;
     max-height:400px;
     cursor: pointer;
@@ -39,9 +39,34 @@
     margin: 5px auto;
 }
 .topboxoffice-title{
-    border: solid red 1px;
+    /* border: solid red 1px; */
     text-overflow: ellipsis;
     /* white-space:nowrap; */
+}
+@media screen and (max-width:767px) {
+    .top-box-office{
+        max-height:200px;
+        min-width:150px;
+        border-radius: 6px;
+        padding-top: 0px;
+    }
+    .top-box-image
+    {
+        border-radius: 6px;
+    }
+    .topboxoffice-view{
+        display: flex;
+        justify-content: space-between;
+    }
+    .top-box-office>*{
+        width: 90%;
+        font-weight: bold;
+        margin: 5px auto;
+    }
+    .topboxoffice-imageContainer{
+        border-radius: 8px;
+        width: 100%;
+    }
 }
 
 

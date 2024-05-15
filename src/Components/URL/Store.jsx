@@ -9,8 +9,8 @@ const appStore = configureStore({
     }
 })
 
-appStore.subscribe(()=>{
-    sessionStorage.setItem("reduxstate",JSON.stringify(appStore.getState()))
-})
+// appStore.subscribe(()=>{
+//     sessionStorage.setItem("reduxstate",JSON.stringify(appStore.getState()))
+// })
 
 export default appStore;

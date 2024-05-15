@@ -4,41 +4,47 @@
     margin: 0px;
 }
 .upcoming-movie-container{
-    /* border: solid rgb(163, 161, 163) 1px; */
     width: 100%;
-    
+    /* border:  solid red 1px; */
 }
-/* .upcoming-movie-box{
-    /* border: solid red 1px; 
-} */
+.upcoming-movie-box{
+    margin: 10px 0px;
+    /* border:solid yellow 1px; */
+}
 .upcoming-movie-box>*{
-    width: 90%;
     margin: 5px auto;
-    /* border: solid red 1px; */
 }
 
+.upcoming-movie-date{
+    padding-left: 10px;
+    /* border: solid black 1px; */
+    font-weight: bold;
+}
 .upcoming-movie-collection
 {
     display: flex;
     flex-wrap: nowrap;
-    /* flex: 0 0 auto; */
-    /* overflow: auto; */
-    border: solid blue 1px;
+    /* border: solid blue 1px; */
     padding: 10px;
-    justify-content: space-between;
-    overflow-x:auto;
+    /* justify-content: space-between; */
+    overflow:auto;
+    
 }
-
+/* .upcoming-movie-collection::-webkit-scrollbar-thumb{
+    display: none;
+} */
  .upcoming-movie-list-container{
-    border: solid green 1px;
-    max-height:350px;
-    width: 300px;
+    /* border: solid green 1px; */
+    height:350px;
+    min-width: 250px;
+    max-width: 251px;
     border-radius: 12px;
     padding-top: 5px;
     background-color: grey;
+    margin-right:10px;
 }
 .upcoming-movie-list-container>*{
-    border :solid yellow 1px;
+    /* border :solid yellow 1px; */
     width: 90%;
     margin:5px auto;
 }
@@ -51,7 +57,8 @@
 .upcoming-movie-list-image{
     height: 100%;
     width: 100%;
+    border-radius:12px;
 }
-.upcoming-movie-title{
+/* .upcoming-movie-title{
     border: solid black 1px;
-} 
+}  */

@@ -33,10 +33,7 @@ const Trailer = () => {
   }
 
 
-    let watchColl = useSelector((appStore) =>{
-      return appStore.watchList?.watchListItem;
-    })
-    // console.log(watchColl)
+  
     
   const datakeys = Object.keys(data);
   let i = 0 ;

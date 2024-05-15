@@ -14,8 +14,7 @@
 
 } */
 .celebrities-news-box{
-    border: solid black 1px;
-    /* cursor:default; */
+    /* border: solid black 1px; */
     background-color: #676869;
     max-height:500px;
     border-radius: 12px;
@@ -24,7 +23,7 @@
     font-size: 14px;
 }
 .celebrities-news-box>*{
-    border: solid yellow 1px;
+    /* border: solid yellow 1px; */
     width:90%;
     margin:5px auto;
 }
@@ -34,7 +33,7 @@
     border-radius: 12px;
 }
 .celebrities-news-image{
-    border: solid green 1px;
+    /* border: solid green 1px; */
     height:100%;
     width: 100%;
     border-radius: 12px;
@@ -48,4 +47,40 @@
     font-size :14px;
     text-overflow: ellipsis;
     font-weight: bold;
+}
+@media screen and (max-width:767) {
+    .celebrities-news-box{
+        background-color: #676869;
+        max-height:500px;
+        border-radius: 6px;
+        /* padding-top: 10px; */
+        width: 100%;
+        font-size: 10px;
+    }
+    .celebrities-news-box>*{
+        /* border: solid yellow 1px; */
+        width:90%;
+        margin:5px auto;
+    }
+    .celebrities-news-image-container{
+        height: 70%;
+        position: relative;
+        border-radius: 6px;
+    }
+    .celebrities-news-image{
+        border: solid green 1px;
+        height:100%;
+        width: 100%;
+        border-radius: 6px;
+    }
+    .celebrities-news-title
+    {
+        display: block;
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+        font-size :10px;
+        /* text-overflow: ellipsis; */
+        /* font-weight: bold; */
+    }
 }

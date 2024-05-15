@@ -4,41 +4,55 @@
     margin: 0px;
 }
 .tvshow-container{
-    border: solid orangered 1px;
+    /* border: solid orangered 1px; */
     width: 100%;
     
 }
 .tvshows-rowContainer{
-    border: solid yellow 1px;
-    width: 98%;
-    margin:10px auto;
+    /* border: solid yellow 1px; */
     padding: 10px;
+    margin: 5px auto;
+    width: 98%;
 }
 .tvshows-listContainer{
-    border: solid black 1px;
+    /* border: solid black 1px; */
     width: 100%;
     display: flex;
-    gap: 10px;
-    /* justify-content: space-between; */
+    padding: 10px 0px;
+    
 }
 .list-box{
-    border: solid green 1px;
+    /* border: solid green 1px; */
+    height:350px;
+    min-width: 250px;
+    max-width: 251px;
+    border-radius: 12px;
+    padding-top: 5px;
+    background-color: grey;
+    margin-right:10px;
 }
 .tv-imageContainer{
-    border: solid red 1px;
-    height: 300px;
-    width: 300px;
+    /* border: solid red 1px; */
+    height: 80%;
+    width: 90%;
+    margin: 8px auto;
+    border-radius: 12px;
 }
 .tv-image{
     height: 100%;
     width: 100%;
+    border-radius:12px;
 }
 .tvshow-title{
     line-break: auto;
+    width: 90%;
+    margin: auto;
 }
-.tvshows-date,.tvshows-listContainer,.tvshow-title{
-    margin: 5px 0px;
-}
+.tvshows-date{
+ padding: 10px;
+ font-weight: bold;
+ font-size: large;
+} 
 
 
 
