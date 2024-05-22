@@ -1,21 +1,13 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
+
 .pplrCeleb-box{
-    /* border: solid green 1px; */
     background-color: gray;
     border-radius: 12px;
-}
-.pplrCeleb-box>*{
-    width: 90%;
-    margin:10px auto;
-    
+    max-height: 300px;
 }
 .pplrCeleb-imageContainer{
-    /* border: solid yellow 1px; */
-    height: 300px;
+    height: 70%;
+    width: 90%;
+    margin:12px auto;
     border-radius: 12px;
 
 }
@@ -24,11 +16,42 @@
     width: 100%;
     border-radius: 12px;
 }
-.pplrCeleb-detail>*{
+.pplrCeleb-detail{
     margin:5px auto;
-    /* border :solid black 1px; */
     text-decoration: none;
+    display: block;
+    width: 90%;
     color:black;
     font-weight: bold;
     cursor: pointer;
+}
+@media screen and (max-width:768px) {
+    .pplrCeleb-box{
+        background-color: gray;
+        border-radius: 6px;
+        max-height:200px;
+        min-width:150px;
+    }
+    
+    .pplrCeleb-imageContainer{
+        height: 80%;
+        width: 100%;
+        border-radius: 6px;
+        margin:0px;
+    }
+    .pplrCeleb-image{
+        height: 100%;
+        width: 100%;
+        border-radius: 6px;
+    }
+    .pplrCeleb-detail{
+        margin:5px auto;
+        display: block;
+        width: 90%;
+        text-decoration: none;
+        color:black;
+        font-weight:normal;
+        font-size: 10px;
+        cursor: pointer;
+    }
 }

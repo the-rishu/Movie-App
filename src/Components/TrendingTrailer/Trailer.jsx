@@ -11,7 +11,7 @@ const Trailer = () => {
  
  
   let data = useFetchAPi({url});
-  // console.log("Trailer Called")
+  // console.log("Trailer Called" + data)
 
 
   let movieforsearch = useSelector((appStore) =>{
@@ -45,19 +45,19 @@ const Trailer = () => {
         {data.map((res)=>(
         <div key={datakeys[i++]} className='Trailer-box'>
             <div className='trailer-image-container'>
-                <img className='trailer-image' src={res.image} alt="" />  
+                <img className='trailer-image' src={res.image.toString()} alt="" />  
                 <p className='trailer-length'>{res.trailerLength}</p>
             </div>
 
             {/*  video Length*/}
             
            
-            {/* title and data */}
+            {/* title  */}
             <Link to={res.videoLink} className='trailer-videolink'>
             <p className='trailer-title'>{res.title}</p>
             </Link>
             
-            <p className='trailer-date'>{res.releaseDate}</p>
+            {/* <p className='trailer-date'>{res.releaseDate}</p> */}
 
             {/* link and watchlist */}
             <div className="watchlist">

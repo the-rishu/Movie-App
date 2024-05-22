@@ -37,8 +37,8 @@ const PopularCelebrites = () => {
               <img className='pplrCeleb-image' src={res.image} alt="" />
             </div>
 
-            <div className='pplrCeleb-detail'>
-              <Link to={res.knownFor.link}>Movie : {res.knownFor.title.split("(")[0]}</Link>
+            <div>
+              <Link className='pplrCeleb-detail' to={res.knownFor.link}>Movie : {res.knownFor.title.split("(")[0]}</Link>
             </div>
 
           </div>

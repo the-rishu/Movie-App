@@ -1,31 +1,25 @@
-*{
-margin: 0px;
-padding:  0px;
-box-sizing: border-box;
+.content-body
+{
+    position: relative;
+    top: 60px;
+    z-index: 0;
+    width: 100%;
+    margin: 0px;
 }
 .apiOption{
     display: flex;
-    /* border: solid black 2px; */
     margin: 10px 0px;
     justify-content: space-around;
     padding: 5px 0px;
+    
 }
 .link{
     text-decoration: none;
-    padding: 8px 5px;
-    /* border: solid yellow 2px; */
-    color: white;
-    background-color: gray;
-    border-radius: 12px;
+    padding: 5px;
+    color: black;
 }
 .changeColor{
-    background-color: darkorange;
+    border-bottom: darkorange solid 1px;
     text-decoration: none;
-    padding: 8px 5px;
-    /* border: solid yellow 2px; */
-    color: white;
-    border-radius: 12px;
 }
-/* .trending-trailer{
-    border:solid rebeccapurple 1px;
-} */
+

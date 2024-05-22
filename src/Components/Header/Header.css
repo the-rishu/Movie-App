@@ -1,65 +1,173 @@
-*{
-    margin: 0px;
-    box-sizing: border-box;
-    padding: 0px;
-}
 .header{
-    /* border: solid purple 2px; */
-    display: flex;
-    justify-content: space-between;
-}
-/* .image-box{
-    /* border: solid yellow 1px; 
-} */
-.logo-image{
-    /* border: solid green 1px; */
-    object-fit: contain;
-    height: 100px;
-}
-.navbar{
-    border: solid black 2px;
-    display: flex;
-    justify-content: space-between;
-   align-items: center;
-    width: 50%;
-    /* padding: 0px 2px; */
-}
-.searchcontainer{
-    border: solid red 2px;
-    width: 50%;
-    display: flex;
-    /* justify-content: space-around; */
-}
-.search-bar{
-    /* height: 80%; */
-    border: solid grey 2px;
-    border-radius: 8px;
-    text-align: left;
-    font-size: large;
-    font-weight:lighter;
-    outline: none;
-}
-.navbar>ul{
-    border: solid green 2px;
-    display: flex;
-    list-style-type:none;
-    width: 40%;
-    justify-content: space-around;
-    
-}
-.navbar>ul>li{
-    border: solid yellow 2px;
-    text-align: center;
+    display: flex; 
+    justify-content: space-between;   
+    width: 100%;
+    background-color: rgb(102, 78, 78);
+    color: white;
+    height: 60px;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
 }
 
-.category{
+.searchcontainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+}
+.search-bar{
+    border-radius: 12px;
+    height: 70%;
+    width: 70%;
+    outline: none;
+    border: none;
+    padding: 8px 5px;
+}
+.search_button{
+    border-radius: 10px;
+    padding: 8px 5px;
+    width: 20%;
+    height: 70%;
+    background-color: rgb(150, 150, 182);
+    border: none;
+    outline: none;
     cursor: pointer;
 }
+.navbar,.hide-nav{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+    
+
+.HomeLink , .WatchLink{
+    text-decoration: none;
+    color:white;  
+}
+.HomeLink{
+    border-bottom: 1px solid yellow;
+   }
+.category{
+    cursor: pointer;
+    position: relative;
+    color: white;
+}
+/* .HomeLink:hover{
+    background-color: #f6f4ff;  pending
+} */
 .dis-category{
-    display: block;
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+} 
+.dis-category>*{
+    text-decoration: none;
+    border-bottom: solid beige 1px;
+    color: white;
+   background-color: rgb(102, 78, 78);
+    padding: 10px;
 }
 .hide{
     display: none;
+}
+.hamburg{
+    display: none;
+    border: solid orange 1px;
+}
+.hamburg>*{
+    width: 30px;
+    height: 2px;
+    border: solid white 1px;
+    margin: 5px;
+    background-color: white;
+}
+@media screen and (min-width:425px) and (max-width:768px) {
+    .hamburg{
+        display: block;
+    } 
+    .navbar{
+        height:100vh;
+        width: 25%;
+        position:absolute;
+        top: 60px;
+        left: 0px;
+        flex-direction: column;
+        background-color: rgb(102, 78, 78);
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .hide-nav{
+        display: none;
+    }
+    .searchcontainer{
+        width: 50%;
+    }
+    .navbar>*{
+        width: 90%;
+        padding: 10px 5px;
+        font-size: large;
+        border: solid bisque 1px;
+        border-radius: 6px;
+        margin: 10px 0px;
+    }
+    .HomeLink{
+        background-color: blue;
+        color: white;
+    }
+    .search_button{
+        border-radius: 8px;
+        padding: 2px 5px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:425px) {
+    .hamburg{
+        display: block;
+    } 
+    .navbar{
+        height:100vh;
+        width: 30%;
+        position:absolute;
+        top: 60px;
+        left: 0px;
+        flex-direction: column;
+        /* border: solid red 1px; */
+        background-color: rgb(102, 78, 78);
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .hide-nav{
+        display: none;
+    }
+    .searchcontainer{
+        width: 50%;
+    }
+    .navbar>*{
+        width: 90%;
+        padding: 10px 5px;
+        font-size: large;
+        border: solid bisque 1px;
+        border-radius: 6px;
+        margin: 10px 0px;
+    }
+    .HomeLink{
+        background-color: blue;
+        color: white;
+    }
+    .search_button{
+        border-radius: 8px;
+        padding: 0px;
+        font-size: 10px;
+    }
+   
 }
 
 

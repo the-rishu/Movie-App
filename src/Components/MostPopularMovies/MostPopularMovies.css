@@ -1,36 +1,17 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
-/* .most-popular-movies-container{
-    border:solid green 2px;
-    display:grid;
-    padding: 1rem;
-    margin: 10px;
-    grid-template-columns: repeat(4,1fr);
-    column-gap: 10px;
-    row-gap: 10px; 
-} */
 .most-popular-movies{
-    /* border: solid yellow 2px; */
     background-color: gray;
     max-height:450px;
     cursor: pointer;
     border-radius: 12px;
-    /* padding-top: 5px; */
     width: 100%;
 }
 .most-popular-movies>*{
     width: 90%;
     margin:10px  auto;
-    /* border: solid red 1px; */
 }
 .mostpopularmovie-image-container{
-    /* border: solid green 1px; */
-    position: relative;
     height: 70%;
     border-radius: 12px;
-   
 }
 .mostpopularmovie-image
 {
@@ -38,11 +19,8 @@
     width: 100%;
     border-radius: 12px;
 }
-.most-popular-timeline
-{
-    display: flex;
-}
 .most-popular-rating{
     display:flex;
     justify-content: space-between;
+    align-items: center;
 }

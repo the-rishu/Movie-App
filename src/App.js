@@ -1,8 +1,6 @@
 import React from 'react';
 import './App.css';
-import { RouterProvider } from 'react-router-dom';
 import Header from './Components/Header/Header';
-// import bodyRouter from './Components/Body/Body';
 import Footeer from './Components/Footer/Footeer';
 import { Provider } from 'react-redux';
 import appStore from './Components/URL/Store';

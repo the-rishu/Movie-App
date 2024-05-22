@@ -1,29 +1,22 @@
-*{
-    padding: 0px;
-    margin: 0px;
-}
+
 .top-250-movies-box{
-    /* border: solid black 1px; */
+    /* border: solid yellow 1px; */
     background-color: #676869;
     max-height:450px;
     cursor: pointer;
     border-radius: 12px;
-    padding-top: 10px;
+    padding-top: 5px;
     width: 100%;
 }
 .top-250-movies-box>*{
     width: 90%;
     margin: 5px auto;
-    /* border: solid yellow 1px; */
 }
 .top250movie-imageContainer{
-    /* border: solid red 1px; */
-    position: relative;
     height: 70%;
     border-radius: 12px;
 }
 .top250movies-image{
-    /* border: solid green 1px; */
     border-radius: 12px;
     height:100%;
     width: 100%;
@@ -32,7 +25,12 @@
     display: flex;
     justify-content: space-between;
 }
-@media screen and (max-width:767px) {
+ /* .top250-title{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}  */
+@media screen and (max-width:768px) {
     .top-250-movies-box{
         max-height:200px;
         min-width:150px;

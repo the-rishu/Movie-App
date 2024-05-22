@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import './Body.css'
-import { Outlet, useLocation} from 'react-router-dom'
+import { Outlet} from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import WatchListColl from '../WatchList/WatchListColl'
-import Error from '../Error/Error'
+// import WatchListColl from '../WatchList/WatchListColl'
+// import Error from '../Error/Error'
 import Trailer from '../TrendingTrailer/Trailer'
 import Top250Movies from '../Top250/Top250Movies'
 import TopBoxOffice from '../TopBoxOffice/TopBoxOffice'
@@ -17,19 +17,15 @@ import TVShow from '../TVShow/TVShow'
 const Body = () => {
   let [activeLink,setactiveLink] = useState(null);
 
-  const urlPath = useLocation()
-  console.log(urlPath.pathname);
-
   const handleBackgroundColor = (link) =>{
     if(activeLink!==link)
     {
       setactiveLink(link);
-      console.log(urlPath);
     }
   }
 
   return (window.innerWidth>=768)?
-    <div>
+    <div className='content-body'>
        <div className="apiOption">
           <Link to="/top-box-office" className={activeLink==="/top-box-office"?'changeColor':'link'}  onClick={()=>handleBackgroundColor("/top-box-office")}> Box Office</Link>
 
@@ -46,49 +42,49 @@ const Body = () => {
           <Link to="/upcoming-tv-shows" className={activeLink==="/upcoming-tv-shows"?'changeColor':'link'} onClick={()=>handleBackgroundColor("/upcoming-tv-shows")}>Upcoming TVShows</Link>
           <Link to="/get-most-popular-celebrities" className={activeLink==="/get-most-popular-celebrities"?'changeColor':'link'} onClick={()=>handleBackgroundColor("/get-most-popular-celebrities")}>Popular Celebrites</Link>
       </div>
-      
+      <hr />
       <Outlet /> 
     </div>
-  :<>
-  <div className="trending-trailer">
-    <p className='component-heading'>Top Trending Trailer</p>
-    <Trailer/>
-  </div>
-  <div className="top-box-office">
-    <p className='component-heading'>Top Box Office</p>
-    <TopBoxOffice/>
-  </div>
-  <div className="most-popular">
-    <p className='component-heading'>Movies Popular Movies</p>
-    <MostPopularMovies/>
-  </div>
-  <div className="top-250">
-    <p className='component-heading'>Top Movies</p>
-    <Top250Movies/>
-  </div>
-   <div className="popular-celeb">
-    <p className='component-heading'>Popular Celebrities</p>
-    <PopularCelebrites/>
-   </div>
-    <div className="tv-shows">
-      <p className='component-heading'>TV Shows </p>
-      <TVShow/>
-    </div>
-    <div className="upcoming-movies">
-      <p className='component-heading'>Upcoming Movies</p>
-      <UpcomingMovies/>
-    </div>
+  :<div className='content-body'>
+      <div className="trending-trailer">
+        <p className='component-heading'>Top Trending Trailer</p>
+        <Trailer/>
+      </div>
+      <div className="top-box-office">
+        <p className='component-heading'>Top Box Office</p>
+        <TopBoxOffice/>
+      </div>
+      <div className="most-popular">
+        <p className='component-heading'>Movies Popular Movies</p>
+        <MostPopularMovies/>
+      </div>
+      <div className="top-250">
+        <p className='component-heading'>Top Movies</p>
+        <Top250Movies/>
+      </div>
+      <div className="popular-celeb">
+        <p className='component-heading'>Popular Celebrities</p>
+        <PopularCelebrites/>
+      </div>
+        <div className="tv-shows">
+          <p className='component-heading'>TV Shows </p>
+          <TVShow/>
+        </div>
+        <div className="upcoming-movies">
+          <p className='component-heading'>Upcoming Movies</p>
+          <UpcomingMovies/>
+        </div>
+      
+        <div className="celeb-news">
+          <p className='component-heading'>Celebrities News</p>
+          <CelebritiesNews/>
+        </div>
+      <div className="movies-news">
+          <p className='component-heading'>Movies News</p>
+          <MovieNews/>
+      </div>
    
-    <div className="celeb-news">
-      <p className='component-heading'>Celebrities News</p>
-      <CelebritiesNews/>
-    </div>
-   <div className="movies-news">
-      <p className='component-heading'>Movies News</p>
-      <MovieNews/>
    </div>
-   
-  </>
 }
 
 

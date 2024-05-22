@@ -2,22 +2,21 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    /* background-color: black; */
+    
 }
 .container
 {
-    /* border:solid red 2px; */
-    display:grid;
-    grid-template-columns: repeat(4,1fr);
-    column-gap: 10px;
-    row-gap: 10px;
+    display:grid; 
+    grid-template-columns:repeat(4,1fr);
+    column-gap: 20px;
+    row-gap: 15px;
     padding: 1rem;
-   
+    width: 100%;
 }
 .watchList-btn{
     border: none;
-    padding: 10px 0px ;
-    margin:5px 0px;
+    padding: 10px 2px ;
+    /* margin:5px 0px; */
     cursor: pointer;
     background-color: #94aace;
     outline: none;
@@ -28,10 +27,9 @@
 {
     display:flex;
     flex-wrap: nowrap;
-    gap: 10px;
+    column-gap: 10px;
     overflow-x: auto;
     padding: 1rem 0rem;
-    box-sizing: border-box;
     justify-content: space-between;
     border : solid yellow 1px;
 

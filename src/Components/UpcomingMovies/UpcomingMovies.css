@@ -59,6 +59,31 @@
     width: 100%;
     border-radius:12px;
 }
-/* .upcoming-movie-title{
-    border: solid black 1px;
-}  */
+@media screen and (max-width:768px) {
+     .upcoming-movie-list-container{
+        /* border: solid green 1px; */
+        height:350px;
+        min-width: 250px;
+        max-width: 251px;
+        border-radius: 12px;
+        padding-top: 5px;
+        background-color: grey;
+        margin-right:10px;
+    }
+    .upcoming-movie-list-container>*{
+        /* border :solid yellow 1px; */
+        width: 90%;
+        margin:5px auto;
+    }
+    .upcoming-movie-image-container{
+        /* border: solid yellow 1px; */
+        height: 80%;
+    }
+    
+    
+    .upcoming-movie-list-image{
+        height: 100%;
+        width: 100%;
+        border-radius:12px;
+    } 
+}
